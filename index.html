@@ -241,7 +241,7 @@
       <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+          <button class="btn btn-default pull-right" type="submit" onClick="submitComplete()">Send</button>
         </div>
       </div>
     </div>
@@ -261,6 +261,10 @@ marker.setMap(map);
 	
 function subscriptionComplete(){
 	alert("Thank you for Subscribing");
+}
+	
+function submitComplete(){
+	alert("We have successfully received your Response and will try to get back as soon as possible");
 }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEoqR4zz6FIqINubdH3K-i3Anm9YdCmAE&callback=myMap"></script>
