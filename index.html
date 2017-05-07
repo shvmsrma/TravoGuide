@@ -43,7 +43,7 @@
     <div class="input-group">
       <input type="email" class="form-control" size="50" placeholder="Email Address" required>
       <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Subscribe</button>
+        <button type="button" class="btn btn-danger" onClick="subscriptionComplete()">Subscribe</button>
       </div>
     </div>
   </form>
@@ -256,6 +256,10 @@ var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, map
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 var marker = new google.maps.Marker({position:myCenter});
 marker.setMap(map);
+}
+	
+function subscriptionComplete(){
+	alert("Thank you for Subscribing");
 }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEoqR4zz6FIqINubdH3K-i3Anm9YdCmAE&callback=myMap"></script>
